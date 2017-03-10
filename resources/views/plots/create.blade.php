@@ -40,7 +40,7 @@
 						<label for="field-1" class="col-sm-3 control-label">Plot No</label>
 						
 						<div class="col-sm-8">
-							<input type="text" class="form-control" name="plot">
+							<input type="text" class="form-control" name="plot" required="required">
 						</div>
 					</div>
 
