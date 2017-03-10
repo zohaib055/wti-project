@@ -19,7 +19,7 @@
 </a>
 <ul>
 <li class=" ">
-    <a href="#">
+    <a href="{{route('plots.create')}}">
     <i class="entypo-plus"></i>
     <span>Register A Member</span>
   </a>
