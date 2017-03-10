@@ -11,15 +11,15 @@
 		<div class="login-content">
 			
 			<a href="index.html" class="logo">
-				<img src="assets/images/logo@2x.png" width="120" alt="" />
+				<img src="assets/images/logo@2x.png" width="220" alt="" />
 			</a>
 			
-			<p class="description">JAXPIN | Property Management System</p>
+		<!--	<p class="description">JAXPIN | Property Management System</p>-->
 			
 			<!-- progress bar indicator -->
 			<div class="login-progressbar-indicator">
 				<h3>43%</h3>
-				<span>logging in...</span>
+				<span>Processing...</span>
 			</div>
 		</div>
 		

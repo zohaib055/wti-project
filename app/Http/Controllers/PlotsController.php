@@ -55,12 +55,23 @@ class PlotsController extends Controller
 
         //upload image
 
+       if ($request->hasFile('image')) {
+
         $this->validate($request, [
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-
+       
+      
         $imageName = time().'.'.$request->image->getClientOriginalExtension();
         $request->image->move(public_path('assets/plot_images'), $imageName);
+
+       }
+       else{
+
+         $imageName = "no.png";
+       }
+
+       
 
        $plot  =  \App\Plots::create([
 
@@ -84,7 +95,7 @@ class PlotsController extends Controller
 
         ]);
 
-       $request->session()->flash('msg', 'New Plot Added Successfully');
+       $request->session()->flash('msg', 'New Member Added Successfully');
        $request->session()->flash('type', 'success');
 
        return redirect()->route('plots.index');
@@ -129,12 +140,14 @@ class PlotsController extends Controller
     {
         //
 
-        $plot  =  \App\Plots::where('id',$id)->update([
+       // print_r($_POST);exit;
 
+        $plot  =  \App\Plots::where('id',$id)->update([
+            
             'plot' => $request->plot, 
             'size' => $request->size, 
-            'number' => $request->number,
-            'reg' => $request->reg,
+            
+            
             'address' => $request->address,
             'contact_no' => $request->contact_no,
             'remarks' => $request->remarks,
@@ -143,9 +156,36 @@ class PlotsController extends Controller
             'names' => $request->names,
             'block' => $request->block,
 
+            'home_no' => $request->home_no,
+            'cnic_no' => $request->cnic_no,
+            'serial_no' => $request->serial_no,
+            'registration_no' => $request->registration_no,
+            
+
         ]);
 
-       $request->session()->flash('msg', 'Plot Updated Successfully');
+
+       if ($request->hasFile('image')) {
+
+        $this->validate($request, [
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+       
+      
+        $imageName = time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move(public_path('assets/plot_images'), $imageName);
+
+        $update_image  =  \App\Plots::where('id',$id)->update([
+        
+
+            'image' => $imageName,
+
+         ]);
+
+       }
+       
+
+       $request->session()->flash('msg', 'Member Updated Successfully');
        $request->session()->flash('type', 'success');
 
        return redirect()->route('plots.index');
@@ -166,7 +206,7 @@ class PlotsController extends Controller
 
         $is_del = $plot->delete();
 
-        $request->session()->flash('msg', 'Plot Deleted Successfully');
+        $request->session()->flash('msg', 'Member Deleted Successfully');
 
         $request->session()->flash('type', 'danger');
 

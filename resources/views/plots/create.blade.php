@@ -53,14 +53,6 @@
 					</div>
 
 					<div class="form-group">
-						<label for="field-1" class="col-sm-3 control-label">Status</label>
-						
-						<div class="col-sm-8">
-							<input type="text" class="form-control" name="status">
-						</div>
-					</div>
-
-					<div class="form-group">
 						<label for="field-1" class="col-sm-3 control-label">Home No</label>
 						
 						<div class="col-sm-8">
@@ -80,7 +72,7 @@
 						<label for="field-1" class="col-sm-3 control-label">Registration No</label>
 						
 						<div class="col-sm-8">
-							<input type="text" class="form-control" name="registeration_no">
+							<input type="text" class="form-control" name="registration_no">
 						</div>
 					</div>
 

@@ -16,8 +16,6 @@ class Plots extends Model
     protected $fillable = [
         'plot', 
         'size', 
-        'number',
-        'reg',
         'address',
         'contact_no',
         'remarks',
