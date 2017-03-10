@@ -10,6 +10,7 @@ use Auth;
 
 use Hash;
 
+
 class UserController extends Controller
 {
     
@@ -31,8 +32,12 @@ class UserController extends Controller
     	$user = Auth::user(); // get current user
 
     	$flags = false;
+     
+     if(!empty($request->new_password)){
 
     	if (Hash::check($request->current_password, $user->password)){
+
+            $update_user = \App\User::where('id', $user->id)->update(["password"=> bcrypt($request->new_password)]);
 
     		$request->session()->flash('msg', 'Password changed successfully');
             $request->session()->flash('type', 'success');
@@ -45,6 +50,17 @@ class UserController extends Controller
 
 			 return  redirect()->route("change-password");
 		}
+
+     }else{
+
+
+         $request->session()->flash('msg', 'Something went wrong please try again!');
+             
+         $request->session()->flash('type', 'danger');
+
+         return  redirect()->route("change-password");
+
+     }
     
     	
     }
