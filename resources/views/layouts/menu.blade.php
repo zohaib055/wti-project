@@ -14,18 +14,19 @@
 </li>
 <li>
 <a href="#">
-    <i class="entypo-layout"></i>
+    <i class="entypo-home"></i>
     <span>Plot Management</span>
 </a>
 <ul>
 <li class=" ">
-    <a href="{{route('plots.create')}}">
-        <span><i class="entypo-dot"></i>Register A Member</span>
-    </a>
+    <a href="#">
+    <i class="entypo-plus"></i>
+    <span>Register A Member</span>
+  </a>
 </li>
 <li class=" ">
     <a href="{{route('plots.index')}}">
-        <span><i class="entypo-dot"></i>Registered Member's</span>
+        <span><i class="entypo-user"></i>Registered Member's</span>
     </a>
 </li>
 
@@ -33,13 +34,13 @@
 </li>
 <li class=" ">
     <a href="#">
-        <i class="entypo-lifebuoy"></i>
+        <i class="entypo-cog"></i>
         <span>Settings</span>
     </a>
     <ul>
         <li class=" ">
             <a href="{{route('change-password')}}">
-                <span><i class="entypo-dot"></i>Change Password</span>
+                <span><i class="entypo-key"></i>Change Password</span>
             </a>
         </li>
         

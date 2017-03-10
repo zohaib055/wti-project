@@ -6360,7 +6360,8 @@ hr + .mail-env {
   transition: all 550ms ease-in-out;
 }
 .login-page .login-header .description {
-  font-size: 13px;
+  font-size: 17px;
+  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 0;
   -moz-transition: all 550ms ease-in-out;

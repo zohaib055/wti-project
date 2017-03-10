@@ -14,7 +14,7 @@
 				<img src="assets/images/logo@2x.png" width="120" alt="" />
 			</a>
 			
-			<p class="description">JAXPIN | JAXAT Property Management System</p>
+			<p class="description">JAXPIN | Property Management System</p>
 			
 			<!-- progress bar indicator -->
 			<div class="login-progressbar-indicator">
