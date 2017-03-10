@@ -25,6 +25,11 @@ class Plots extends Model
         'dues',
         'names',
         'block',
+        'cnic_no',
+        'registration_no',
+        'home_no',
+        'serial_number',
+        'image',
     ];
 
 

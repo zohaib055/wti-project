@@ -3,9 +3,21 @@
 @section("content")
 
 <div class="row">
-<form role="form" class="form-horizontal form-groups-bordered" action="{{route('plots.store')}}" method="post">
+
+<div class="panel-heading">
+	<div class="panel-title">
+		<h3>Add Member</h3>
+	</div>
+	
+</div>
+
+<form role="form" class="form-horizontal form-groups-bordered" action="{{route('plots.store')}}" method="post" enctype="multipart/form-data">
 				{{ csrf_field() }}
+
+
 	<div class="col-md-6">
+
+
 			
 				    
 				    <div class="form-group">
@@ -25,22 +37,12 @@
 					</div>
 	
 					<div class="form-group">
-						<label for="field-1" class="col-sm-3 control-label">Plot</label>
+						<label for="field-1" class="col-sm-3 control-label">Plot No</label>
 						
 						<div class="col-sm-8">
 							<input type="text" class="form-control" name="plot">
 						</div>
 					</div>
-
-
-					<div class="form-group">
-						<label for="field-1" class="col-sm-3 control-label">Reg</label>
-						
-						<div class="col-sm-8">
-							<input type="text" class="form-control" name="reg">
-						</div>
-					</div>
-					
 
 					<div class="form-group">
 						<label for="field-ta" class="col-sm-3 control-label">Remarks</label>
@@ -86,7 +88,7 @@
 						<label for="field-1" class="col-sm-3 control-label">Upload Image</label>
 						
 						<div class="col-sm-8">
-							<input type="file" class="form-control" name="upload_image">
+							<input type="file" class="form-control" name="image">
 						</div>
 					</div>
 		
@@ -142,14 +144,7 @@
 			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="field-1" class="col-sm-3 control-label">Number</label>
-			
-			<div class="col-sm-8">
-				<input type="text" class="form-control" name="number">
-			</div>
-		</div>
-
+		
 		<div class="form-group">
 			<label for="field-1" class="col-sm-3 control-label">Status</label>
 			

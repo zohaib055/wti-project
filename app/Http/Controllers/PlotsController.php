@@ -53,12 +53,21 @@ class PlotsController extends Controller
     {
         //
 
+        //upload image
+
+        $this->validate($request, [
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $imageName = time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move(public_path('assets/plot_images'), $imageName);
+
        $plot  =  \App\Plots::create([
 
             'plot' => $request->plot, 
             'size' => $request->size, 
-            'number' => $request->number,
-            'reg' => $request->reg,
+            
+            
             'address' => $request->address,
             'contact_no' => $request->contact_no,
             'remarks' => $request->remarks,
@@ -66,6 +75,12 @@ class PlotsController extends Controller
             'dues' => $request->dues,
             'names' => $request->names,
             'block' => $request->block,
+
+            'home_no' => $request->home_no,
+            'cnic_no' => $request->cnic_no,
+            'serial_no' => $request->serial_no,
+            'registration_no' => $request->registration_no,
+            'image' => $imageName,
 
         ]);
 
