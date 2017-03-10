@@ -15,17 +15,17 @@
 <li>
 <a href="#">
     <i class="entypo-layout"></i>
-    <span>Plots</span>
+    <span>Plot Management</span>
 </a>
 <ul>
 <li class=" ">
     <a href="{{route('plots.create')}}">
-        <span><i class="entypo-dot"></i>Add Plot</span>
+        <span><i class="entypo-dot"></i>Register A Member</span>
     </a>
 </li>
 <li class=" ">
     <a href="{{route('plots.index')}}">
-        <span><i class="entypo-dot"></i>All Plots</span>
+        <span><i class="entypo-dot"></i>Registered Member's</span>
     </a>
 </li>
 
