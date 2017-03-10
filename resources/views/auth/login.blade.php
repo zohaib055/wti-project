@@ -14,7 +14,7 @@
 				<img src="assets/images/logo@2x.png" width="120" alt="" />
 			</a>
 			
-			<p class="description">Dear user, log in to access the admin area!</p>
+			<p class="description">JAXPIN | JAXAT Property Management System</p>
 			
 			<!-- progress bar indicator -->
 			<div class="login-progressbar-indicator">
@@ -107,11 +107,11 @@
 						<i class="entypo-gplus"></i>
 					</button>
 					
-				</div> -->				
-			</form>
-			
-			
-			<div class="login-bottom-links">
+				</div> 
+
+
+
+             <div class="login-bottom-links">
 				
 				<a href="extra-forgot-password.html" class="link">Forgot your password?</a>
 				
@@ -119,7 +119,14 @@
 				
 				<a href="#">ToS</a>  - <a href="#">Privacy Policy</a>
 				
-			</div>
+			 </div>
+
+
+				-->				
+			</form>
+			
+			
+			
 			
 		</div>
 		
