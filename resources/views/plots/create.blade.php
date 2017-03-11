@@ -2,6 +2,10 @@
 
 @section("content")
 
+<form role="form" class="form-horizontal form-groups-bordered" action="{{route('plots.store')}}" method="post" enctype="multipart/form-data">
+				{{ csrf_field() }}
+
+
 <div class="row">
 
 <div class="panel-heading">
@@ -11,8 +15,6 @@
 	
 </div>
 
-<form role="form" class="form-horizontal form-groups-bordered" action="{{route('plots.store')}}" method="post" enctype="multipart/form-data">
-				{{ csrf_field() }}
 
 
 	<div class="col-md-6">
@@ -84,12 +86,7 @@
 						</div>
 					</div>
 		
-					<div class="form-group">
-						<div class="col-sm-offset-3 col-sm-8">
-							<button type="submit" class="btn btn-success">Create</button>
-						</div>
-					</div>
-				
+					
 				
 		
 
@@ -165,12 +162,32 @@
 			</div>
 		</div>
 
-
-	
+        
+       
 	</div>
 
-</form>
+
+  
+
+				
+
+
+
+
 </div>
 
+ <div class="row">
 
+    <div class="col-md-6">
+
+        <div class="form-group">
+		<div class="col-sm-offset-3 col-sm-8">
+			<button type="submit" class="btn btn-success">Create</button>
+		</div>
+	   </div>
+    	
+    </div>
+ 	
+  </div>
+</form>
 @endsection
