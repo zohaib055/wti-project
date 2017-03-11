@@ -74,7 +74,7 @@
 				</div>
 				
 				<!-- Implemented in v1.1.4 -->				<div class="form-group">
-					<em>- or -</em>
+				
 				</div>
 				
 				
