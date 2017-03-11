@@ -3,7 +3,7 @@
 
 @section("content")
 
-<h3>All Plots</h3>
+<h3>All Registered Members</h3>
 
 
 <table class="table table-bordered datatable" id="table-1">

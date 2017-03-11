@@ -6,7 +6,7 @@
             <!-- logo -->
             <div class="logo">
                 <a href="/">
-                    <img src="{{ asset( 'assets/images/logo@2x.png')}}" width="160" height="53" alt="" />
+                    <img src="{{ asset( 'assets/images/logo@2x.png')}}" width="160" height="38" alt="" />
                 </a>
             </div>
             
