@@ -167,11 +167,18 @@
 				    <option value="">select block</option>
 
 				  @if($plot->block == "A")  
-					<option value="A" checked>A</option>
-					<option value="B" selected="selected">B</option>
-				  @else
+					<option value="A" selected="selected">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+				  @elseif($plot->block == "B")
 					<option value="A">A</option>
 					<option value="B" selected="selected">B</option>
+					<option value="C">C</option>
+
+				  @else
+                    <option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C" selected="selected">C</option>
 				  @endif
 				</select>
 			</div>
