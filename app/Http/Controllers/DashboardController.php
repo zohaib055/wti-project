@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User;
+
 class DashboardController extends Controller
 {
     //
@@ -16,6 +18,9 @@ class DashboardController extends Controller
     public function index(){
 
 
-    	return view("dashboard.index");
+    	$total_members = \App\User::count();
+
+
+    	return view("dashboard.index",compact("total_members"));
     }
 }
